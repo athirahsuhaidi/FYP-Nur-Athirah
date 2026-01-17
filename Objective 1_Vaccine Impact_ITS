@@ -20,7 +20,7 @@ df_weekly <- df %>%
   summarise(deaths = sum(bid == 1, na.rm = TRUE), .groups = "drop") %>%
   arrange(Negeri, week)
 
-#first vaccine dose
+#First vaccine dose
 #define intervention date for first dose
 intervention_date <- ymd("2021-02-24")  # Dos pertama
 
